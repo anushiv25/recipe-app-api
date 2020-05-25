@@ -46,6 +46,7 @@ class RecipeViewSet(viewsets.ModelViewSet):
     def get_serializer_class(self):
         """Return appropriate serializer class"""
         if self.action == 'retrieve':
+            print('hello')
             return serializers.RecipeDetailSerializer
 
         return self.serializer_class
